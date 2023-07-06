@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | RTH</title>
+    <title>Interioverse Design Tool</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1480 height=660></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -18,9 +18,9 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
+        <!-- <div id="unity-webgl-logo"></div> -->
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">RTH</div>
+        <div id="unity-build-title">Interioverse Tool</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RTH.loader.js";
+      var loaderUrl = buildUrl + "/unitywebgl test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RTH.data",
-        frameworkUrl: buildUrl + "/RTH.framework.js",
-        codeUrl: buildUrl + "/RTH.wasm",
+        dataUrl: buildUrl + "/unitywebgl test.data",
+        frameworkUrl: buildUrl + "/unitywebgl test.framework.js",
+        codeUrl: buildUrl + "/unitywebgl test.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "RTH",
-        productVersion: "0.1",
+        companyName: "Interioverse",
+        productName: "InterioverseTool",
+        productVersion: "0.1.0",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1480px";
+        canvas.style.height = "660px";
       }
 
       loadingBar.style.display = "block";
